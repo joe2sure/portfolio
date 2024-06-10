@@ -35,7 +35,17 @@ export const Skill = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p></p>
+              <p>
+                As a skilled web/mobile developer, I specialize in creating
+                dynamic and responsive websites that deliver an exceptional user
+                experience.
+                <br></br>
+                With a strong command over HTML, CSS, JavaScript, and popular
+                frameworks like React/React Native, I craft intuitive interfaces
+                and seamless interactions. Whether it's building a sleek
+                corporate site or a feature-rich web application, I leverage my
+                expertise to bring your vision to life.
+              </p>
               <Carousel
                 responsive={responsive}
                 infinite={true}
