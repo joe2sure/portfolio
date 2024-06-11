@@ -57,6 +57,7 @@
  border-radius: 0;
  position: relative;
  transition: 0.3s ease-in-out;
+ border: none;
 }
 
 .contact form button span {
