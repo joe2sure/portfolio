@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { Contact } from "../Contact";
+import { Contact } from "../../Contact";
 
 test("render Contact component", () => {
   render(<Contact />);

@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { ProjectCard } from "../ProjectCard";
+import { ProjectCard } from "../../ProjectCard";
 
 test("renders ProjectCard component", () => {
   const project = {

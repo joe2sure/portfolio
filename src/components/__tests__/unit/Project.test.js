@@ -1,6 +1,6 @@
 import React from "react";
 import { screen, render } from "@testing-library/react";
-import { Project } from "../Project";
+import { Project } from "../../Project";
 
 test("render Project component", () => {
   render(<Project />);

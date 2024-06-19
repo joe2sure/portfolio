@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { Skill } from "../components/Skill";
+import { Skill } from "../../Skill";
 
 test("renders Skill component", () => {
   render(<Skill />);

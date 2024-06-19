@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { MailchimpForm } from "../MailchimpForm";
+import { MailchimpForm } from "../../MailchimpForm";
 
 test("renders MailchimpForm component", () => {
   render(<MailchimpForm />);

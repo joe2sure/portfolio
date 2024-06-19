@@ -5,7 +5,7 @@ import {
   fireEvent,
   getByPlaceholderText,
 } from "@testing-library/react";
-import { Newsletter } from "../Newsletter";
+import { Newsletter } from "../../Newsletter";
 
 test("render Newsletter component", () => {
   const status = "sending...";
