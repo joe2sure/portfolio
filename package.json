@@ -27,7 +27,9 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
-    "test:ci": "react-scripts test --watchAll=false"
+    "test:ci": "react-scripts test --watchAll=false",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "eslintConfig": {
     "extends": [
