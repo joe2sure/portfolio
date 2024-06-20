@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css/animate.min.css";
@@ -12,7 +12,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1); // eslint-disable-next-line
+  const [index, setIndex] = useState(1);
   const toRotate = [
     "Web Developer",
     "Mobile Developer",
@@ -75,8 +75,8 @@ export const Banner = () => {
                     {`Hi! I'm Joe, `}{" "}
                     <span
                       className="txt-rotate"
-                      dataPeriod="1000"
                       data-rotate='[ "Web Developer", "Web Designer", "Mobile Developer" ]'
+                      dataperiod="1000"
                     >
                       <span className="wrap">{text}</span>
                     </span>
@@ -88,7 +88,7 @@ export const Banner = () => {
                     While not an expert in design, I ensure functional and
                     visually appealing results.
                   </p>
-                  <button onClick={() => console.log("connect")}>
+                  <button>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>

@@ -1,14 +1,10 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { Navbar } from "../../Navbar";
-import { BrowserRouter as Router } from "react-router-dom";
+import { NavBar } from "../../Navbar";
+// import { BrowserRouter as Router } from "react-router-dom";
 
 test("render Navbar component", () => {
-  render(
-    <Router>
-      <Navbar />
-    </Router>
-  );
+  render(<NavBar />);
 
   const homeLink = screen.getByText(/Home/i);
   expect(homeLink).toBeInTheDocument();
@@ -16,6 +12,6 @@ test("render Navbar component", () => {
   const skillsLink = screen.getByText(/Skill/i);
   expect(skillsLink).toBeInTheDocument();
 
-  const projectLink = screen.getByText();
+  const projectLink = screen.getByText(/Project/i);
   expect(projectLink).toBeInTheDocument();
 });

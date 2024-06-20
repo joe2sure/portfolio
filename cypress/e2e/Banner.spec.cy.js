@@ -1,5 +1,5 @@
 describe("Banner E2E tests", () => {
-  it("should display banner test and image", () => {
+  it("should display banner text and image", () => {
     cy.visit("/");
 
     //Check banner text

@@ -23,7 +23,10 @@ test("submit Contact form", async () => {
   const firstNameInput = screen.getByPlaceholderText(/First Name/i);
   fireEvent.change(firstNameInput, { target: { value: "John" } });
   expect(firstNameInput.value).toBe("John");
+
   const submitButton = screen.getByText(/send/i);
-  fireEvent.click(submitButton).toBe("sending...");
-  expect(submitButton.textContent).toBe("sending...");
+  fireEvent.click(submitButton);
+
+  // Check the state of the button after the click event
+  expect(submitButton.textContent).toBe("Sending...");
 });

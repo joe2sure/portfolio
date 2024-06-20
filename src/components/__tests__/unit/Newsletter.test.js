@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  render,
-  screen,
-  fireEvent,
-  getByPlaceholderText,
-} from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { Newsletter } from "../../Newsletter";
 
 test("render Newsletter component", () => {
@@ -12,7 +7,7 @@ test("render Newsletter component", () => {
   const message = "";
   const onValidated = jest.fn();
   render(
-    <Newsletter status={status} message={message} onValidate={onValidated} />
+    <Newsletter status={status} message={message} onValidated={onValidated} />
   );
 
   const emailInput = screen.getByPlaceholderText(/Email Address/i);
@@ -27,10 +22,10 @@ test("Submit newsletter form", () => {
   const onValidated = jest.fn();
 
   render(
-    <Newsletter status={status} message={message} onValidate={onValidated} />
+    <Newsletter status={status} message={message} onValidated={onValidated} />
   );
 
-  const emailInput = getByPlaceholderText(/Email Address/i);
+  const emailInput = screen.getByPlaceholderText(/Email Address/i);
   fireEvent.change(emailInput, { target: { value: "test@example.com" } });
   expect(emailInput.value).toBe("test@example.com");
   const submitButton = screen.getByText(/Submit/i);
